@@ -7,7 +7,7 @@
 	<packaging>jar</packaging>
 	<version>0.1.0</version>
 
-	<!-- 统一控制版本  -->
+	<!-- 统一控制版本 -->
 	<properties>
 		<org.springframework.version>4.2.6.RELEASE</org.springframework.version>
 		<spring.version>4.2.6.RELEASE</spring.version>
@@ -26,17 +26,29 @@
 
 
 
-    
+
 
 		<dependency>
-
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
 			<version>2.2.1-b03</version>
-
 		</dependency>
 
-		<!-- 必须  -->
+		<!-- for jstl in jsp -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<!-- for el in jsp -->
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>javax.el-api</artifactId>
+			<version>3.0.1-b04</version>
+		</dependency>
+
+		<!-- 必须 -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
@@ -68,9 +80,9 @@
 			<artifactId>spring-web</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
-		
-		
-		<!-- 必须  -->
+
+
+		<!-- 必须 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
